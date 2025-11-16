@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="myButton">Увеличить счётчик</button>
+    <p class="counter">Счётчик: <span class = "number">0</span></p>
+    <script>
+        let number = 0
+        const buttonEL = document.querySelector('.myButton')
+        const numberEL = document.querySelector('.number')
+        
+        buttonEL.onclick = function(){
+            number += 1
+            numberEL.textContent = number
+        }
+        console.log(number)
+    </script>
+</body>
+</html>
